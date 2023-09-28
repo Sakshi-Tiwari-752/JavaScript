@@ -1,9 +1,9 @@
                                            //scope
 
 
-let a = 10;
- const b = 20;
- var c = 30;
+// let a = 10;
+//  const b = 20;
+//  var c = 30;
 
  console.log(a);
  console.log(b);
@@ -13,37 +13,37 @@ let a = 10;
 
 
 
- if(true){         // { block scope } 
-    let a = 10;
-    const b = 20;
-    var c = 54;  // block scope me hum jo bhi value likhte hai vo value bahr output me nhi aati h 
- }
+//  if(true){         // { block scope } 
+//     let a = 10;
+//     const b = 20;
+//     var c = 54;  // block scope me hum jo bhi value likhte hai vo value bahr output me nhi aati h 
+//  }
 
- console.log(a);  // output => undefined aayega kyuki let keyword use kiya gya h aur jiska scope } closing braces tk hi h
- console.log(b);  // output => undefined  same as let 
- console.log(c);     // output => 54  kyuki var ye stategy follow nhi krta h 
+//  console.log(a);  // output => undefined aayega kyuki let keyword use kiya gya h aur jiska scope } closing braces tk hi h
+//  console.log(b);  // output => undefined  same as let 
+//  console.log(c);     // output => 54  kyuki var ye stategy follow nhi krta h 
 
 
-   let a = 300;     //global scope
-   let b = 34;
-   if (true){       //block scope
-    let a =20;
-    const b = 31;
-    console.log("block scope: ", a , b);      // output => block scope: 20, 31
-   }
+//    let a = 300;     //global scope
+//    let b = 34;
+//    if (true){       //block scope
+//     let a =20;
+//     const b = 31;
+//     console.log("block scope: ", a , b);      // output => block scope: 20, 31
+//    }
 
-   console.log("global scope: ", a);            // output =>  global scope: 300
-   console.log ("global scope: ", b);           // outpput => global scope:  34
+//    console.log("global scope: ", a);            // output =>  global scope: 300
+//    console.log ("global scope: ", b);           // outpput => global scope:  34
 
 
    // scope in loop 
 
-   let a = 300;
-   for ( let i= 0; i<10; i++){
-    console.log([i]);                // block scope
-   }
+//    let a = 300;
+//    for ( let i= 0; i<10; i++){
+//     console.log([i]);                // block scope
+//    }
 
-   console.log(a);                   // global scope
+//    console.log(a);                   // global scope
 
 
    
@@ -53,19 +53,19 @@ let a = 10;
 
     // (Nested scope me basically child function(two) parent function(one) ko access kr pate h )
 
-  function one(){
-    const username = "sakshi"
+//   function one(){
+//     const username = "sakshi"
 
-    function two(){
-        const channel = "youtube"
-        console.log(username);
-    }
+//     function two(){
+//         const channel = "youtube"
+//         console.log(username);
+//    }
     // console.log(channel);
 
-    two();
-  }                                                   
+//     two();
+//   }                                                   
    
-  one();
+//   one();
 
 
 
@@ -76,7 +76,7 @@ let a = 10;
   function addone(num){
         return num +1
   }
-//   addone(6)         // this statement only return value not print because we are not calling the printing method
+  // addone(6)       // this statement only return value not print because we are not calling the printing method
  
 
 
@@ -85,4 +85,4 @@ addTwo(7)               // can not access addTwo before initialization at object
     return num + 2
   }
 
-//   addTwo(7)
+//    addTwo(7)
